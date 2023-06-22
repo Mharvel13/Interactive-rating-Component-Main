@@ -133,10 +133,18 @@ section:nth-child(2) {
     section {
         width: 50%;
     }
+
+    
 }
 @media (max-width: 550px) {
     section {
         width: 90%;
+
+    }
+
+    .rating-item {
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 }
 
