@@ -145,7 +145,11 @@ section:nth-child(2) {
     font-size: 14px;
     text-align: center;
     color: var(--White);
+    margin: 0;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Orange);
+    text-decoration: none;
+
+
 }
