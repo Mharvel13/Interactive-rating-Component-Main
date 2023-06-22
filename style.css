@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsla(217, 12%, 63%, 0.3);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+main {
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo img {
+    width: 40px;
+    background-color: var(--Light-Grey);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+section {
+    padding: 2rem;
+    background-color: var(--Dark-Blue);
+    width: 30%;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p {
+    line-height: 20px;
+}
+
+.text-area {
+    margin: 20px 0;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-evenly;
+    margin: 5px;
+}
+
+.rating-item {
+    color: var(--White);
+    font-size: 1.2rem;
+    border-radius: 100%;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    margin: 0 10px;
+    background-color: var(--Light-Grey);
+}
+.rating-item:hover {
+    background-color: var(--Medium-Grey);
+}
+
+.rating-item:focus {
+    background-color: var(--Orange);
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Orange);
+    color: white;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+#submit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+section:nth-child(2) {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.rating-img {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.rating-img img {
+    width: 55%;
+}
+
+.selected-text {
+    background-color: var(--Light-Grey);
+    color: var(--Orange);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 5px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#thank-you-section {
+    display: none;
+}
+
+#error {
+    color: red;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 551px) {
+    section {
+        width: 50%;
+    }
+}
+@media (max-width: 550px) {
+    section {
+        width: 90%;
+    }
+}
+
+.attribution {
+    background-color: var(--Very-Dark-Blue);
+    font-size: 14px;
+    text-align: center;
+    color: var(--White);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
